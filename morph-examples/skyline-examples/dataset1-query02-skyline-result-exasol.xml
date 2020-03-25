@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sparql>
+    <head>
+        <variable name="s1"/>
+        <variable name="d1s1"/>
+        <variable name="d2s1"/>
+        <variable name="d3s1"/>
+    </head>
+    <results>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/4603</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,74655839</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9999198304</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9999198304</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/1098</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9862224813</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9950660993</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9950660993</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/8842</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9995825947</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,6883089937</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,6883089937</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/5040</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9986685878</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,6953214564</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,6953214564</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/6118</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9461262314</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9995085672</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9995085672</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/1845</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,999922412</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,3998259629</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,3998259629</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/7697</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9986027782</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9809406595</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9809406595</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/9204</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9881898789</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9820116777</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9820116777</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/262</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9463928612</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,995252612</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,995252612</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/292</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,9869175521</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9914131993</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9914131993</literal>
+            </binding>
+        </result>
+        <result>
+            <binding name="s1">
+                <uri>http://data.example.com/dataset/1198</uri>
+            </binding>
+            <binding name="d1s1">
+                <literal>0,077021251</literal>
+            </binding>
+            <binding name="d2s1">
+                <literal>0,9999918952</literal>
+            </binding>
+            <binding name="d3s1">
+                <literal>0,9999918952</literal>
+            </binding>
+        </result>
+    </results>
+</sparql>

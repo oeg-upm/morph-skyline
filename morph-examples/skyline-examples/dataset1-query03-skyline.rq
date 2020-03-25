@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.com/ns#>
+
+SELECT ?s1 ?d1s1 ?d2s1 ?d3s1 ?d4s1 
+WHERE { 
+	?s1 ex:d1 ?d1s1 .
+	?s1 ex:d2 ?d2s1 .
+	?s1 ex:d3 ?d3s1 .
+	?s1 ex:d4 ?d4s1 .
+}
+skyline of ?d1s1 MAX, ?d2s1 MAX, ?d3s1 MAX, ?d4s1 MAX

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sparql>
+    <head>
+        <variable name="a1"/>
+        <variable name="gpa1"/>
+        <variable name="r1"/>
+        <variable name="gpa2"/>
+        <variable name="r2"/>
+    </head>
+    <results>
+        <result>
+            <binding name="a1">
+                <uri>http://mappingpedia.linkeddata.es/resources/Person/B2</uri>
+            </binding>
+            <binding name="gpa1">
+                <literal>4,5</literal>
+            </binding>
+            <binding name="r1">
+                <literal>10</literal>
+            </binding>
+        </result>
+    </results>
+</sparql>

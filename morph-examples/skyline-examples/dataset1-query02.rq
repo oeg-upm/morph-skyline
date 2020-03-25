@@ -1,0 +1,20 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.com/ns#>
+
+SELECT ?s1 ?d1s1 ?d2s1 ?d3s1
+WHERE { 
+	?s1 ex:d1 ?d1s1 .
+	?s1 ex:d2 ?d2s1 .
+	?s1 ex:d3 ?d3s1 .
+	OPTIONAL { 
+		?s1 ex:d1 ?d1s1 .
+		?s1 ex:d2 ?d2s1 .
+		?s1 ex:d3 ?d3s1 .
+		?s2 ex:d1 ?d1s2 .
+		?s2 ex:d2 ?d2s2 .
+		?s2 ex:d3 ?d3s2 .
+	FILTER ( ?d3s2 >= ?d3s1 && ?d2s2 >= ?d2s1  &&  ?d1s2 >= ?d1s1 && ( ?d3s2 > ?d3s1 || ?d2s2 > ?d2s1 || ?d1s2 > ?d1s1  ) )
+	}
+	FILTER (!BOUND(?s2))
+}

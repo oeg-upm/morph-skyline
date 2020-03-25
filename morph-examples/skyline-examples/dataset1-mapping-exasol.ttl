@@ -1,0 +1,49 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ex: <http://example.com/ns#>.
+
+<#TriplesDataset>
+    rr:logicalTable [ rr:tableName "i10d10000" ];
+    rr:subjectMap [
+        rr:template "http://data.example.com/dataset/{id}";
+        rr:class ex:Dataset;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d1;
+        rr:objectMap [ rr:column "d1" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d2;
+        rr:objectMap [ rr:column "d2" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d3;
+        rr:objectMap [ rr:column "d3" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d4;
+        rr:objectMap [ rr:column "d4" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d5;
+        rr:objectMap [ rr:column "d5" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d6;
+        rr:objectMap [ rr:column "d6" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d7;
+        rr:objectMap [ rr:column "d7" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d8;
+        rr:objectMap [ rr:column "d8" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d9;
+        rr:objectMap [ rr:column "d9" ];
+    ];
+    rr:predicateObjectMap [
+        rr:predicate ex:d10;
+        rr:objectMap [ rr:column "d10" ];
+    ].
