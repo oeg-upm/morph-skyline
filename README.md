@@ -17,7 +17,7 @@ If, on the other hand, you want to edit the project or at least work from an IDE
  - Now that it´s finally imported, you can run the file es.upm.fi.dia.oeg.morph.r2rml.rdb.engine.MorphRDBRunner.scala (in other to pass the arguments in Eclipse, right click, Run As -> Run Configuration -> Arguments, and remember to imput both the path to the .properties file and it´s full name).
 * In case the program doesn´t find the file log4j.properties, move it from "morph-examples" to "morph-r2rml-rdb", thought this file isn´t essential.
 
-Acknowledgement: Since January 2020, the development of morph-Skyline has been supported by the SPRINT project (http://sprint-transport.eu/).
+<!--- Acknowledgement: Since January 2020, the development of morph-Skyline has been supported by the SPRINT project (http://sprint-transport.eu/).--->
 
 References:
 [1] Borzsonyi, Stephan; Kossmann, Donald; Stocker, Konrad (2001). "The Skyline Operator". Proceedings 17th International Conference on Data Engineering: 421–430. doi:10.1109/ICDE.2001.914855.
