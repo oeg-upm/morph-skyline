@@ -1,0 +1,40 @@
+version: "2"    
+services: 
+    exasoldb: 
+        container_name: exasoldb
+        privileged: true
+        hostname: exasoldb-server
+        image: exasol/docker-db:latest
+        ports: 
+            - "8899:8888"
+        restart: always
+        volumes: 
+            - "./exa_volume:/exa exasol/docker-db"
+            - "./exa:/exa"
+        networks:
+            - sky
+
+    morphskyline:
+        image: morphskyline 
+        build: 
+            context: "."
+            dockerfile: ./Dockerfile
+        container_name: morphskyline
+        depends_on: 
+            - exasoldb
+        restart: always
+        volumes: 
+            - "./data:/data"
+            - "./queries:/queries"
+            - "./results:/results"
+            - "./mappings:/mappings"
+        networks:
+            - sky
+
+networks:
+    sky:
+        external: false
+
+    
+
+
