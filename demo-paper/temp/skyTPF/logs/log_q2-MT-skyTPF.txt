@@ -1,0 +1,46 @@
+query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX gtfs: <http://vocab.gtfs.org/terms#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?route ?stop ?demand ?use ?dSCH ?dMKT
+WHERE {
+    ?stopTime a gtfs:StopTime .
+    ?stopTime gtfs:trip ?trip .
+    ?stopTime gtfs:stop ?stop .
+    ?trip gtfs:route ?route .
+    ?d gtfs:route ?route .
+    ?d gtfs:demand ?demand .
+    ?u gtfs:stop ?stop .
+    ?u gtfs:use ?use .
+    ?dist gtfs:stop ?stop .
+    ?dist gtfs:dSCH ?dSCH .
+    ?dist gtfs:dMKT ?dMKT .
+}
+ [?demand, ?use, ?dSCH, ?dMKT] [MAX, MIN, MIN, MIN]
+Running experiments for GTFS distribution
+java.util.concurrent.ExecutionException: org.apache.http.client.HttpResponseException: Server Error
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at dk.aau.cs.skytpf.main.HybridAlgorithmImpl.determinePivotBinding(HybridAlgorithmImpl.java:245)
+	at dk.aau.cs.skytpf.main.HybridAlgorithmImpl.processQuery(HybridAlgorithmImpl.java:66)
+	at dk.aau.cs.skytpf.main.SkylineQueryProcessor.processQuery(SkylineQueryProcessor.java:172)
+	at dk.aau.cs.skytpf.main.gtfs.executeSyntheticDataExperiments(gtfs.java:75)
+	at dk.aau.cs.skytpf.main.gtfs.main(gtfs.java:52)
+Caused by: org.apache.http.client.HttpResponseException: Server Error
+	at org.apache.http.impl.client.AbstractResponseHandler.handleResponse(AbstractResponseHandler.java:70)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.apache.http.client.fluent.Response.returnContent(Response.java:97)
+	at dk.aau.cs.skytpf.callable.SkylinePivotHttpRequestThread.call(SkylinePivotHttpRequestThread.java:38)
+	at dk.aau.cs.skytpf.callable.SkylinePivotHttpRequestThread.call(SkylinePivotHttpRequestThread.java:19)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[]
+Killed
