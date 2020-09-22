@@ -6,7 +6,7 @@ Skyline queries are preference-based queries, which were proposed by Börzsönyi
 
 Morph-Skyline extends Morph-RDB and it supports two operational modes: data upgrade (generating RDF instances from data in a relational database) and skyline query translation (SPARQL to SQL). Morph-Skyline has been tested on synthetic datasets using the data generator provided by Börzsönyi et al.[1]. At the moment, Morph-Skyline works with EXASol.
 
-This repository contains code and experiments for the ISWC'20 paper "Morph-Skyline: A Virtual Ontology-Based Data Access Approach for Skyline Queries". Experiments can be found in the Experiments directory of this repository.
+This repository contains code and experiments for the ISWC'20 demo-paper "Morph-Skyline: Skyline Queries for Virtual Knowledge Graph Access". Experiments can be found in the Experiments directory of this repository.
 
 User guides:
 As Morph-Skyline extends Morph-RDB, for those who want to use this project on an user level, you can find a little guide for Morph-RDB to on the main branch wiki : https://github.com/oeg-upm/morph-rdb/wiki.
