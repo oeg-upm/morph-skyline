@@ -1,8 +1,0 @@
-<https://www.zaragoza.es/sede/servicio/farmacia/8860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Pharmacy> .
-<https://www.zaragoza.es/sede/servicio/farmacia/8860> <http://schema.org/name> "Farmacia Artal Lerín, Ana Cristina" .
-<https://www.zaragoza.es/sede/servicio/farmacia/8848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Pharmacy> .
-<https://www.zaragoza.es/sede/servicio/farmacia/8848> <http://schema.org/name> "Farmacia Sagardoy Aguado, Catalina" .
-<https://www.zaragoza.es/sede/servicio/farmacia/8967> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Pharmacy> .
-<https://www.zaragoza.es/sede/servicio/farmacia/8967> <http://schema.org/name> "Farmacia Polo SanJuán, Manuel" .
-<https://www.zaragoza.es/sede/servicio/farmacia/8904> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Pharmacy> .
-<https://www.zaragoza.es/sede/servicio/farmacia/8904> <http://schema.org/name> "Farmacia Sahagún Salcedo, María Carmen" .
